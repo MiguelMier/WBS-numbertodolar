@@ -5,5 +5,5 @@
 // Generado el: 2024.03.20 a las 11:07:36 AM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.dataaccess.com/webservicesserver/", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.dataaccess.com/webservicesserver/", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package com.miguel.wbsconcliente.ws.numbers;

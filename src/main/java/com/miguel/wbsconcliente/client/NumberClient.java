@@ -7,6 +7,7 @@ import com.miguel.wbsconcliente.ws.numbers.NumberToWordsResponse;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class NumberClient extends WebServiceGatewaySupport {
 
@@ -17,9 +18,9 @@ public class NumberClient extends WebServiceGatewaySupport {
         return (NumberToDollarsResponse) getWebServiceTemplate().marshalSendAndReceive(request);
     }
 
-    public NumberToWordsResponse getDollar(String value){
-        NumberToWordsResponse request = new NumberToWordsResponse();
-        request.setNumberToWordsResult(value);
+    public NumberToWordsResponse getWord(BigInteger value){
+        NumberToWords request = new NumberToWords();
+        request.setUbiNum(value);
 
         return (NumberToWordsResponse) getWebServiceTemplate().marshalSendAndReceive(request);
     }
